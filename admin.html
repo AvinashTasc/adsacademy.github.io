@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <img class="as" src="img/22.jpg" alt="fd">
+</head>
+<body>
+        
+        <form style="color: aliceblue;" name="login"><br>
+            <hr>
+            <h1 style=" font-size: 50px;">ADMIN &nbsp;&nbsp;CELL</h1>
+            <hr><br><br>
+            Username&nbsp;&nbsp;<input type="text" name="userid"/><br><br>
+            Password&nbsp;&nbsp;&nbsp;<input type="password" name="pswrd"/><br><br><br>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <hr>
+        </form>
+        <script language="javascript">
+            function check(form) { 
+                if(form.userid.value == "admin" && form.pswrd.value == "admin") {
+                    window.open('logadm.php')
+                }
+                else {
+                    alert("Error Password or Username")
+                }
+            }
+        </script>
+</body>
+</html>
